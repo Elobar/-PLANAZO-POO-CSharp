@@ -12,17 +12,17 @@ composición, colecciones (`List<T>`) y excepciones.
 
 ## 2. Funcionalidades implementadas
 
-| Opción | Funcionalidad |
-| :----: | ------------- |
-| 1 | Ver eventos disponibles (tipo, fecha, precio final y cupos) |
-| 2 | Consultar el detalle de un evento por su identificador |
-| 3 | Reservar entradas (con todas las validaciones) |
-| 4 | Ver todas las reservas realizadas |
-| 5 | Cancelar una reserva (devuelve los cupos) |
-| 6 | Resumen: reservas activas, entradas reservadas y valor total de las activas |
-| 7 | **Reto 2:** ver las reservas de un usuario |
-| 8 | Ejecutar los 7 casos de prueba del parcial de forma demostrativa |
-| 0 | Salir |
+| Opción | Funcionalidad                                                               |
+| :----: | --------------------------------------------------------------------------- |
+|   1    | Ver eventos disponibles (tipo, fecha, precio final y cupos)                 |
+|   2    | Consultar el detalle de un evento por su identificador                      |
+|   3    | Reservar entradas (con todas las validaciones)                              |
+|   4    | Ver todas las reservas realizadas                                           |
+|   5    | Cancelar una reserva (devuelve los cupos)                                   |
+|   6    | Resumen: reservas activas, entradas reservadas y valor total de las activas |
+|   7    | **Reto 2:** ver las reservas de un usuario                                  |
+|   8    | Ejecutar los 7 casos de prueba del parcial de forma demostrativa            |
+|   0    | Salir                                                                       |
 
 **Reglas de negocio:**
 
@@ -199,17 +199,17 @@ classDiagram
 
 ## 6. Dónde se aplican los conceptos de POO
 
-| Concepto | Dónde se aplica |
-| -------- | --------------- |
-| **Clases y objetos** | `Evento`, `Reserva`, `Usuario`, `GestorReservas`; en tiempo de ejecución se crean objetos como `new Concierto(3, "Noche de Salsa…", …)`. |
-| **Constructores** | Todos los constructores validan los datos (`Evento`, `Usuario`, `Reserva`). Un evento nace con `CuposDisponibles = CapacidadMaxima`. Los hijos llaman a `base(...)`. |
-| **Encapsulamiento** | Las propiedades son de solo lectura (`{ get; }`). `Evento.CuposDisponibles` y `Reserva.Estado` tienen `private set`: solo cambian mediante `ReservarCupos()`, `LiberarCupos()` y `Cancelar()`, que validan antes de modificar. El gestor expone `IReadOnlyList<T>` para que nadie altere las listas desde fuera. |
-| **Herencia** | `Cine`, `Concierto`, `Taller` y `Festival` heredan los atributos y la gestión de cupos de `Evento`. |
-| **Abstracción** | `Evento` es `abstract`: no puede instanciarse y obliga a cada hijo a implementar `CalcularPrecioFinal()` y `Tipo`. |
-| **Polimorfismo** | `Reserva` y el menú llaman `evento.CalcularPrecioFinal()` sin saber de qué tipo es; cada objeto responde con su propia regla (57.500 para un concierto de 50.000, 72.000 para un taller de 80.000…). |
-| **Composición y asociaciones** | `GestorReservas` compone las colecciones; `Reserva` se asocia con `Evento` y `Usuario`. |
-| **Colecciones** | `List<Evento>`, `List<Reserva>`, `List<Usuario>` en `GestorReservas`, consultadas con LINQ (`Where`, `FirstOrDefault`, `Sum`). |
-| **Excepciones** | Jerarquía propia desde `PlanazoException`; el menú captura los errores, informa y continúa. Las entradas no numéricas se controlan con `int.TryParse`. |
+| Concepto                       | Dónde se aplica                                                                                                                                                                                                                                                                                                  |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Clases y objetos**           | `Evento`, `Reserva`, `Usuario`, `GestorReservas`; en tiempo de ejecución se crean objetos como `new Concierto(3, "Noche de Salsa…", …)`.                                                                                                                                                                         |
+| **Constructores**              | Todos los constructores validan los datos (`Evento`, `Usuario`, `Reserva`). Un evento nace con `CuposDisponibles = CapacidadMaxima`. Los hijos llaman a `base(...)`.                                                                                                                                             |
+| **Encapsulamiento**            | Las propiedades son de solo lectura (`{ get; }`). `Evento.CuposDisponibles` y `Reserva.Estado` tienen `private set`: solo cambian mediante `ReservarCupos()`, `LiberarCupos()` y `Cancelar()`, que validan antes de modificar. El gestor expone `IReadOnlyList<T>` para que nadie altere las listas desde fuera. |
+| **Herencia**                   | `Cine`, `Concierto`, `Taller` y `Festival` heredan los atributos y la gestión de cupos de `Evento`.                                                                                                                                                                                                              |
+| **Abstracción**                | `Evento` es `abstract`: no puede instanciarse y obliga a cada hijo a implementar `CalcularPrecioFinal()` y `Tipo`.                                                                                                                                                                                               |
+| **Polimorfismo**               | `Reserva` y el menú llaman `evento.CalcularPrecioFinal()` sin saber de qué tipo es; cada objeto responde con su propia regla (57.500 para un concierto de 50.000, 72.000 para un taller de 80.000…).                                                                                                             |
+| **Composición y asociaciones** | `GestorReservas` compone las colecciones; `Reserva` se asocia con `Evento` y `Usuario`.                                                                                                                                                                                                                          |
+| **Colecciones**                | `List<Evento>`, `List<Reserva>`, `List<Usuario>` en `GestorReservas`, consultadas con LINQ (`Where`, `FirstOrDefault`, `Sum`).                                                                                                                                                                                   |
+| **Excepciones**                | Jerarquía propia desde `PlanazoException`; el menú captura los errores, informa y continúa. Las entradas no numéricas se controlan con `int.TryParse`.                                                                                                                                                           |
 
 ## 7. Casos de prueba
 
@@ -217,15 +217,15 @@ Todos se pueden ejecutar de una vez con la **opción 8** del menú. La salida re
 [`Capturas/salida-casos-de-prueba.txt`](Capturas/salida-casos-de-prueba.txt) y la de una sesión interactiva en
 [`Capturas/salida-sesion-interactiva.txt`](Capturas/salida-sesion-interactiva.txt).
 
-| # | Caso | Resultado esperado | Evidencia |
-| - | ---- | ------------------ | --------- |
-| 1 | Registrar una reserva válida | Reserva confirmada y cupos descontados | ![Caso 1](Capturas/03-caso1-reserva-valida.png) |
-| 2 | Reservar más entradas que los cupos | `CuposInsuficientesException` controlada | ![Caso 2](Capturas/04-caso2-mas-cupos-que-disponibles.png) |
-| 3 | Reservar una cantidad negativa | `CantidadInvalidaException` controlada | ![Caso 3](Capturas/05-caso3-cantidad-negativa.png) |
-| 4 | Cancelar una reserva | Se devuelven los cupos | ![Caso 4](Capturas/06-caso4-cancelar-devuelve-cupos.png) |
-| 5 | Cancelar dos veces la misma reserva | `ReservaYaCanceladaException` controlada | ![Caso 5](Capturas/07-caso5-cancelar-dos-veces.png) |
-| 6 | Consultar un evento inexistente | `EventoNoEncontradoException` controlada | ![Caso 6](Capturas/08-caso6-evento-inexistente.png) |
-| 7 | Precio final por tipo de evento | Cine $20.000 → $20.000; Concierto $50.000 → $57.500; Taller $80.000 → $72.000; Festival $100.000 → $130.000 | ![Caso 7](Capturas/09-caso7-precios-por-tipo.png) |
+| #   | Caso                                | Resultado esperado                                                                                          | Evidencia                                                  |
+| --- | ----------------------------------- | ----------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| 1   | Registrar una reserva válida        | Reserva confirmada y cupos descontados                                                                      | ![Caso 1](Capturas/03-caso1-reserva-valida.png)            |
+| 2   | Reservar más entradas que los cupos | `CuposInsuficientesException` controlada                                                                    | ![Caso 2](Capturas/04-caso2-mas-cupos-que-disponibles.png) |
+| 3   | Reservar una cantidad negativa      | `CantidadInvalidaException` controlada                                                                      | ![Caso 3](Capturas/05-caso3-cantidad-negativa.png)         |
+| 4   | Cancelar una reserva                | Se devuelven los cupos                                                                                      | ![Caso 4](Capturas/06-caso4-cancelar-devuelve-cupos.png)   |
+| 5   | Cancelar dos veces la misma reserva | `ReservaYaCanceladaException` controlada                                                                    | ![Caso 5](Capturas/07-caso5-cancelar-dos-veces.png)        |
+| 6   | Consultar un evento inexistente     | `EventoNoEncontradoException` controlada                                                                    | ![Caso 6](Capturas/08-caso6-evento-inexistente.png)        |
+| 7   | Precio final por tipo de evento     | Cine $20.000 → $20.000; Concierto $50.000 → $57.500; Taller $80.000 → $72.000; Festival $100.000 → $130.000 | ![Caso 7](Capturas/09-caso7-precios-por-tipo.png)          |
 
 Otras capturas: ![Menú](Capturas/01-menu-principal.png) ![Eventos](Capturas/02-ver-eventos.png)
 ![Resumen](Capturas/10-resumen-reservas.png) ![Reservas de usuario](Capturas/11-reservas-de-usuario.png)
@@ -248,7 +248,7 @@ puse todo lo común en la clase abstracta `Evento` y dejé solo lo diferente en 
 como método abstracto:
 
 ```csharp
-// Evento.cs: lo común se escribe una sola vez
+
 public abstract decimal CalcularPrecioFinal();
 
 public void ReservarCupos(int cantidad)
