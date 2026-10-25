@@ -223,7 +223,7 @@ Todos se pueden ejecutar de una vez con la **opción 8** del menú. La salida re
 | 2   | Reservar más entradas que los cupos | `CuposInsuficientesException` controlada                                                                    | ![Caso 2](Capturas/04-caso2-mas-cupos-que-disponibles.png) |
 | 3   | Reservar una cantidad negativa      | `CantidadInvalidaException` controlada                                                                      | ![Caso 3](Capturas/05-caso3-cantidad-negativa.png)         |
 | 4   | Cancelar una reserva                | Se devuelven los cupos                                                                                      | ![Caso 4](Capturas/06-caso4-cancelar-devuelve-cupos.jpeg)   |
-| 5   | Cancelar dos veces la misma reserva | `ReservaYaCanceladaException` controlada                                                                    | ![Caso 5](Capturas/07-caso5-cancelar-dos-veces.png)        |
+| 5   | Cancelar dos veces la misma reserva | `ReservaYaCanceladaException` controlada                                                                    | ![Caso 5](Capturas/07-caso5-cancelar-dos-veces.jpeg)        |
 | 6   | Consultar un evento inexistente     | `EventoNoEncontradoException` controlada                                                                    | ![Caso 6](Capturas/08-caso6-evento-inexistente.jpeg)        |
 
 
