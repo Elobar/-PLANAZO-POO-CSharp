@@ -225,10 +225,7 @@ Todos se pueden ejecutar de una vez con la **opción 8** del menú. La salida re
 | 4   | Cancelar una reserva                | Se devuelven los cupos                                                                                      | ![Caso 4](Capturas/06-caso4-cancelar-devuelve-cupos.png)   |
 | 5   | Cancelar dos veces la misma reserva | `ReservaYaCanceladaException` controlada                                                                    | ![Caso 5](Capturas/07-caso5-cancelar-dos-veces.png)        |
 | 6   | Consultar un evento inexistente     | `EventoNoEncontradoException` controlada                                                                    | ![Caso 6](Capturas/08-caso6-evento-inexistente.png)        |
-| 7   | Precio final por tipo de evento     | Cine $20.000 → $20.000; Concierto $50.000 → $57.500; Taller $80.000 → $72.000; Festival $100.000 → $130.000 | ![Caso 7](Capturas/09-caso7-precios-por-tipo.png)          |
 
-Otras capturas: ![Menú](Capturas/01-menu-principal.png) ![Eventos](Capturas/02-ver-eventos.png)
-![Resumen](Capturas/10-resumen-reservas.png) ![Reservas de usuario](Capturas/11-reservas-de-usuario.png)
 
 ## 8. Retos adicionales
 
