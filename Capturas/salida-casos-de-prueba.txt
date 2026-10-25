@@ -1,0 +1,58 @@
+SALIDA DEL MENÚ OPCIÓN 8 (casos de prueba demostrativos)
+Generado con: dotnet run  ->  opción 8
+
+CASOS DE PRUEBA DEMOSTRATIVOS (sobre un gestor nuevo)
+
+--------------------------------------------------------------------------------
+CASO 1: Registrar una reserva válida
+--------------------------------------------------------------------------------
+Cupos antes: 100
+  Reserva #:   1
+  Persona:     Ana Pérez
+  Evento:      Noche de Salsa en Barranquilla (Concierto)
+  Entradas:    2 x $57.500
+  Valor total: $115.000
+  Estado:      Confirmada
+Cupos después: 98
+✔ Reserva registrada correctamente.
+
+--------------------------------------------------------------------------------
+CASO 2: Reservar más entradas que los cupos disponibles
+--------------------------------------------------------------------------------
+Intentando reservar 20 entradas en "Taller de Cocina Caribeña" (cupos: 15).
+✘ Error controlado: No hay cupos suficientes en "Taller de Cocina Caribeña": se pidieron 20 y solo hay 15 disponibles.
+
+--------------------------------------------------------------------------------
+CASO 3: Reservar con una cantidad negativa
+--------------------------------------------------------------------------------
+Intentando reservar -3 entradas.
+✘ Error controlado: La cantidad de entradas debe ser mayor que cero (se recibió -3).
+
+--------------------------------------------------------------------------------
+CASO 4: Cancelar una reserva y comprobar que se devuelven los cupos
+--------------------------------------------------------------------------------
+Cupos antes de cancelar: 98
+Cupos después de cancelar: 100 (capacidad 100)
+✔ Reserva #1 cancelada y cupos devueltos.
+
+--------------------------------------------------------------------------------
+CASO 5: Cancelar dos veces la misma reserva
+--------------------------------------------------------------------------------
+Intentando cancelar de nuevo la reserva #1.
+✘ Error controlado: La reserva #1 ya fue cancelada anteriormente; no se puede cancelar dos veces.
+
+--------------------------------------------------------------------------------
+CASO 6: Consultar un evento inexistente
+--------------------------------------------------------------------------------
+Consultando el evento 99.
+✘ Error controlado: No existe ningún evento con el identificador 99.
+
+--------------------------------------------------------------------------------
+CASO 7: Comprobar el precio final de cada tipo de evento
+--------------------------------------------------------------------------------
+Cine      base   $20.000 -> esperado   $20.000 | obtenido   $20.000 | OK
+Concierto base   $50.000 -> esperado   $57.500 | obtenido   $57.500 | OK
+Taller    base   $80.000 -> esperado   $72.000 | obtenido   $72.000 | OK
+Festival  base  $100.000 -> esperado  $130.000 | obtenido  $130.000 | OK
+
+Fin de los casos de prueba.

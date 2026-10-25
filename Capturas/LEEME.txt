@@ -1,0 +1,17 @@
+Aquí deben ir las CAPTURAS DE PANTALLA (.png) de tu propia ejecución con `dotnet run`.
+Nombres sugeridos (el README ya los referencia):
+
+  01-menu-principal.png
+  02-ver-eventos.png
+  03-caso1-reserva-valida.png
+  04-caso2-mas-cupos-que-disponibles.png
+  05-caso3-cantidad-negativa.png
+  06-caso4-cancelar-devuelve-cupos.png
+  07-caso5-cancelar-dos-veces.png
+  08-caso6-evento-inexistente.png
+  09-caso7-precios-por-tipo.png
+  10-resumen-reservas.png
+  11-reservas-de-usuario.png
+
+Tip: la opción 8 del menú ejecuta los 7 casos de prueba de una sola vez.
+Los .txt de esta carpeta son la salida real del programa como respaldo.

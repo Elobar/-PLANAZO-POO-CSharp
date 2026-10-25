@@ -1,0 +1,16 @@
+# Compilación
+bin/
+obj/
+out/
+
+# IDEs
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+
+# Otros
+*.log
+.DS_Store
+Thumbs.db

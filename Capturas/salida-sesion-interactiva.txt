@@ -1,0 +1,358 @@
+SALIDA DE UNA SESIÓN INTERACTIVA CON ENTRADAS CORRECTAS E INCORRECTAS
+Entradas usadas (en orden): 1 | 2,3 | 2,99 | 3,3,1001,Ana Pérez,2 | 3,3,1001,-5 | 3,6,1002,Luis Gómez,99 | 4 | 5,1 | 5,1 | 5,99 | 6 | 7,1001 | 7,555 | 2,abc,1 | 9 | 0
+
+
+================================
+        PLANAZO - EVENTOS
+================================
+
+1. Ver eventos disponibles
+2. Consultar evento
+3. Reservar entradas
+4. Ver reservas realizadas
+5. Cancelar una reserva
+6. Ver resumen de reservas
+7. Ver reservas de un usuario (Reto 2)
+8. Ejecutar casos de prueba demostrativos
+0. Salir
+
+Seleccione una opción: 
+EVENTOS DISPONIBLES
+--------------------------------------------------------------------------------
+ID  Tipo       Nombre                           Fecha              P. final     Cupos
+--------------------------------------------------------------------------------
+1   Cine       Interestelar (Reestreno)         07/11/2026 19:00    $20.000     40/40
+2   Cine       El Padrino                       08/11/2026 20:00    $18.000     30/30
+3   Concierto  Noche de Salsa en Barranquilla   14/11/2026 20:00    $57.500   100/100
+4   Concierto  Concierto Sinfónico de Navidad   12/12/2026 19:30    $69.000     80/80
+5   Taller     Taller de Fotografía Urbana      21/11/2026 09:00    $72.000     20/20
+6   Taller     Taller de Cocina Caribeña        28/11/2026 10:00    $90.000     15/15
+7   Festival   Festival del Caribe              05/12/2026 16:00   $130.000   200/200
+
+================================
+        PLANAZO - EVENTOS
+================================
+
+1. Ver eventos disponibles
+2. Consultar evento
+3. Reservar entradas
+4. Ver reservas realizadas
+5. Cancelar una reserva
+6. Ver resumen de reservas
+7. Ver reservas de un usuario (Reto 2)
+8. Ejecutar casos de prueba demostrativos
+0. Salir
+
+Seleccione una opción: 
+Identificador del evento: DETALLE DEL EVENTO
+--------------------------------------------------------------------------------
+ID:                3
+Tipo:              Concierto
+Nombre:            Noche de Salsa en Barranquilla
+Fecha:             14/11/2026 20:00
+Precio base:       $50.000
+Precio final:      $57.500
+Cupos disponibles: 100 de 100
+
+================================
+        PLANAZO - EVENTOS
+================================
+
+1. Ver eventos disponibles
+2. Consultar evento
+3. Reservar entradas
+4. Ver reservas realizadas
+5. Cancelar una reserva
+6. Ver resumen de reservas
+7. Ver reservas de un usuario (Reto 2)
+8. Ejecutar casos de prueba demostrativos
+0. Salir
+
+Seleccione una opción: 
+Identificador del evento: ✘ No existe ningún evento con el identificador 99.
+
+================================
+        PLANAZO - EVENTOS
+================================
+
+1. Ver eventos disponibles
+2. Consultar evento
+3. Reservar entradas
+4. Ver reservas realizadas
+5. Cancelar una reserva
+6. Ver resumen de reservas
+7. Ver reservas de un usuario (Reto 2)
+8. Ejecutar casos de prueba demostrativos
+0. Salir
+
+Seleccione una opción: 
+EVENTOS DISPONIBLES
+--------------------------------------------------------------------------------
+ID  Tipo       Nombre                           Fecha              P. final     Cupos
+--------------------------------------------------------------------------------
+1   Cine       Interestelar (Reestreno)         07/11/2026 19:00    $20.000     40/40
+2   Cine       El Padrino                       08/11/2026 20:00    $18.000     30/30
+3   Concierto  Noche de Salsa en Barranquilla   14/11/2026 20:00    $57.500   100/100
+4   Concierto  Concierto Sinfónico de Navidad   12/12/2026 19:30    $69.000     80/80
+5   Taller     Taller de Fotografía Urbana      21/11/2026 09:00    $72.000     20/20
+6   Taller     Taller de Cocina Caribeña        28/11/2026 10:00    $90.000     15/15
+7   Festival   Festival del Caribe              05/12/2026 16:00   $130.000   200/200
+
+Identificador del evento a reservar: Documento de la persona: Nombre de la persona: Cantidad de entradas: ✔ Reserva confirmada.
+  Reserva #:   1
+  Persona:     Ana Pérez
+  Evento:      Noche de Salsa en Barranquilla (Concierto)
+  Entradas:    2 x $57.500
+  Valor total: $115.000
+  Estado:      Confirmada
+
+================================
+        PLANAZO - EVENTOS
+================================
+
+1. Ver eventos disponibles
+2. Consultar evento
+3. Reservar entradas
+4. Ver reservas realizadas
+5. Cancelar una reserva
+6. Ver resumen de reservas
+7. Ver reservas de un usuario (Reto 2)
+8. Ejecutar casos de prueba demostrativos
+0. Salir
+
+Seleccione una opción: 
+EVENTOS DISPONIBLES
+--------------------------------------------------------------------------------
+ID  Tipo       Nombre                           Fecha              P. final     Cupos
+--------------------------------------------------------------------------------
+1   Cine       Interestelar (Reestreno)         07/11/2026 19:00    $20.000     40/40
+2   Cine       El Padrino                       08/11/2026 20:00    $18.000     30/30
+3   Concierto  Noche de Salsa en Barranquilla   14/11/2026 20:00    $57.500    98/100
+4   Concierto  Concierto Sinfónico de Navidad   12/12/2026 19:30    $69.000     80/80
+5   Taller     Taller de Fotografía Urbana      21/11/2026 09:00    $72.000     20/20
+6   Taller     Taller de Cocina Caribeña        28/11/2026 10:00    $90.000     15/15
+7   Festival   Festival del Caribe              05/12/2026 16:00   $130.000   200/200
+
+Identificador del evento a reservar: Documento de la persona: Usuario encontrado: Ana Pérez
+Cantidad de entradas: ✘ La cantidad de entradas debe ser mayor que cero (se recibió -5).
+
+================================
+        PLANAZO - EVENTOS
+================================
+
+1. Ver eventos disponibles
+2. Consultar evento
+3. Reservar entradas
+4. Ver reservas realizadas
+5. Cancelar una reserva
+6. Ver resumen de reservas
+7. Ver reservas de un usuario (Reto 2)
+8. Ejecutar casos de prueba demostrativos
+0. Salir
+
+Seleccione una opción: 
+EVENTOS DISPONIBLES
+--------------------------------------------------------------------------------
+ID  Tipo       Nombre                           Fecha              P. final     Cupos
+--------------------------------------------------------------------------------
+1   Cine       Interestelar (Reestreno)         07/11/2026 19:00    $20.000     40/40
+2   Cine       El Padrino                       08/11/2026 20:00    $18.000     30/30
+3   Concierto  Noche de Salsa en Barranquilla   14/11/2026 20:00    $57.500    98/100
+4   Concierto  Concierto Sinfónico de Navidad   12/12/2026 19:30    $69.000     80/80
+5   Taller     Taller de Fotografía Urbana      21/11/2026 09:00    $72.000     20/20
+6   Taller     Taller de Cocina Caribeña        28/11/2026 10:00    $90.000     15/15
+7   Festival   Festival del Caribe              05/12/2026 16:00   $130.000   200/200
+
+Identificador del evento a reservar: Documento de la persona: Nombre de la persona: Cantidad de entradas: ✘ No hay cupos suficientes en "Taller de Cocina Caribeña": se pidieron 99 y solo hay 15 disponibles.
+
+================================
+        PLANAZO - EVENTOS
+================================
+
+1. Ver eventos disponibles
+2. Consultar evento
+3. Reservar entradas
+4. Ver reservas realizadas
+5. Cancelar una reserva
+6. Ver resumen de reservas
+7. Ver reservas de un usuario (Reto 2)
+8. Ejecutar casos de prueba demostrativos
+0. Salir
+
+Seleccione una opción: 
+RESERVAS REALIZADAS
+--------------------------------------------------------------------------------
+ID  Persona            Evento                       Cant.        Total Estado    
+--------------------------------------------------------------------------------
+1   Ana Pérez          Noche de Salsa en Barranqui…     2     $115.000 Confirmada
+
+================================
+        PLANAZO - EVENTOS
+================================
+
+1. Ver eventos disponibles
+2. Consultar evento
+3. Reservar entradas
+4. Ver reservas realizadas
+5. Cancelar una reserva
+6. Ver resumen de reservas
+7. Ver reservas de un usuario (Reto 2)
+8. Ejecutar casos de prueba demostrativos
+0. Salir
+
+Seleccione una opción: 
+Identificador de la reserva a cancelar: ✔ Reserva #1 cancelada. Se devolvieron 2 cupo(s) a "Noche de Salsa en Barranquilla".
+Cupos disponibles ahora: 100 de 100
+
+================================
+        PLANAZO - EVENTOS
+================================
+
+1. Ver eventos disponibles
+2. Consultar evento
+3. Reservar entradas
+4. Ver reservas realizadas
+5. Cancelar una reserva
+6. Ver resumen de reservas
+7. Ver reservas de un usuario (Reto 2)
+8. Ejecutar casos de prueba demostrativos
+0. Salir
+
+Seleccione una opción: 
+Identificador de la reserva a cancelar: ✘ La reserva #1 ya fue cancelada anteriormente; no se puede cancelar dos veces.
+
+================================
+        PLANAZO - EVENTOS
+================================
+
+1. Ver eventos disponibles
+2. Consultar evento
+3. Reservar entradas
+4. Ver reservas realizadas
+5. Cancelar una reserva
+6. Ver resumen de reservas
+7. Ver reservas de un usuario (Reto 2)
+8. Ejecutar casos de prueba demostrativos
+0. Salir
+
+Seleccione una opción: 
+Identificador de la reserva a cancelar: ✘ No existe ninguna reserva con el identificador 99.
+
+================================
+        PLANAZO - EVENTOS
+================================
+
+1. Ver eventos disponibles
+2. Consultar evento
+3. Reservar entradas
+4. Ver reservas realizadas
+5. Cancelar una reserva
+6. Ver resumen de reservas
+7. Ver reservas de un usuario (Reto 2)
+8. Ejecutar casos de prueba demostrativos
+0. Salir
+
+Seleccione una opción: 
+RESUMEN DE RESERVAS ACTIVAS
+--------------------------------------------------------------------------------
+Reservas activas:    0
+Entradas reservadas: 0
+Valor total:         $0
+
+================================
+        PLANAZO - EVENTOS
+================================
+
+1. Ver eventos disponibles
+2. Consultar evento
+3. Reservar entradas
+4. Ver reservas realizadas
+5. Cancelar una reserva
+6. Ver resumen de reservas
+7. Ver reservas de un usuario (Reto 2)
+8. Ejecutar casos de prueba demostrativos
+0. Salir
+
+Seleccione una opción: 
+Documento del usuario: RESERVAS DE ANA PÉREZ (doc. 1001)
+--------------------------------------------------------------------------------
+ID  Persona            Evento                       Cant.        Total Estado    
+--------------------------------------------------------------------------------
+1   Ana Pérez          Noche de Salsa en Barranqui…     2     $115.000 Cancelada 
+
+================================
+        PLANAZO - EVENTOS
+================================
+
+1. Ver eventos disponibles
+2. Consultar evento
+3. Reservar entradas
+4. Ver reservas realizadas
+5. Cancelar una reserva
+6. Ver resumen de reservas
+7. Ver reservas de un usuario (Reto 2)
+8. Ejecutar casos de prueba demostrativos
+0. Salir
+
+Seleccione una opción: 
+Documento del usuario: ✘ No hay ningún usuario registrado con ese documento.
+
+================================
+        PLANAZO - EVENTOS
+================================
+
+1. Ver eventos disponibles
+2. Consultar evento
+3. Reservar entradas
+4. Ver reservas realizadas
+5. Cancelar una reserva
+6. Ver resumen de reservas
+7. Ver reservas de un usuario (Reto 2)
+8. Ejecutar casos de prueba demostrativos
+0. Salir
+
+Seleccione una opción: 
+Identificador del evento: ✘ Entrada no válida: escribe un número entero.
+Identificador del evento: DETALLE DEL EVENTO
+--------------------------------------------------------------------------------
+ID:                1
+Tipo:              Cine
+Nombre:            Interestelar (Reestreno)
+Fecha:             07/11/2026 19:00
+Precio base:       $20.000
+Precio final:      $20.000
+Cupos disponibles: 40 de 40
+
+================================
+        PLANAZO - EVENTOS
+================================
+
+1. Ver eventos disponibles
+2. Consultar evento
+3. Reservar entradas
+4. Ver reservas realizadas
+5. Cancelar una reserva
+6. Ver resumen de reservas
+7. Ver reservas de un usuario (Reto 2)
+8. Ejecutar casos de prueba demostrativos
+0. Salir
+
+Seleccione una opción: 
+✘ Opción no válida. Elige un número del menú.
+
+================================
+        PLANAZO - EVENTOS
+================================
+
+1. Ver eventos disponibles
+2. Consultar evento
+3. Reservar entradas
+4. Ver reservas realizadas
+5. Cancelar una reserva
+6. Ver resumen de reservas
+7. Ver reservas de un usuario (Reto 2)
+8. Ejecutar casos de prueba demostrativos
+0. Salir
+
+Seleccione una opción: 
+Gracias por usar PLANAZO. ¡Hasta pronto!
